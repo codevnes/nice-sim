@@ -1,0 +1,174 @@
+/**
+ * Nice SIM Plugin Styles
+ */
+
+/* Container */
+.nice-sim-container {
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+/* Form styles */
+.nice-sim-form-container {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.nice-sim-form-container .form-group {
+    margin-bottom: 15px;
+}
+
+.nice-sim-form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.nice-sim-form-container input,
+.nice-sim-form-container select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 40px;
+}
+
+.nice-sim-form-container .wrap-birthday-3 {
+    display: flex;
+    gap: 10px;
+}
+
+.nice-sim-form-container .wrap-birthday-3 select {
+    flex: 1;
+}
+
+.nice-sim-form-container .text-right {
+    text-align: right;
+}
+
+.nice-sim-form-container button {
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.nice-sim-form-container button:hover {
+    background-color: #005177;
+}
+
+/* Loading indicator */
+.nice-sim-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.nice-sim-loading .spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 115, 170, 0.3);
+    border-radius: 50%;
+    border-top-color: #0073aa;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Results container */
+.nice-sim-result-container {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.nice-sim-result-title {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.nice-sim-result-content {
+    line-height: 1.6;
+}
+
+.nice-sim-result-content table {
+    border-collapse: collapse;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.nice-sim-result-content table td,
+.nice-sim-result-content table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.nice-sim-result-content strong {
+    font-weight: 600;
+}
+
+/* Error message */
+.nice-sim-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .col-md-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .col-md-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .nice-sim-form-container .wrap-birthday-3 {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .col-5 {
+        flex: 0 0 41.666667%;
+        max-width: 41.666667%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    .col-7 {
+        flex: 0 0 58.333333%;
+        max-width: 58.333333%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+} 
